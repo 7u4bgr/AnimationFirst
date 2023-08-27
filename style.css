@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: url(img1.jpg) center/cover;
+  width: 100%;
+  height: 100vh;
+}
+.background .lg {
+  background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767));
+  width: 100%;
+  height: 100vh;
+}
+.background .lg .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.background .lg .center h2 {
+  margin-top: 40vh;
+  font-size: 60px;
+  color: antiquewhite;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.651);
+  padding: 10px;
+}
+.background .lg .center h2:active {
+  background-color: red;
+}
+.background .lg .writeauto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 40px;
+  /* The typewriter cursor effect */
+}
+.background .lg .writeauto h3 {
+  font-size: 20px;
+  color: antiquewhite;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-right: 0.07em solid rgb(0, 0, 0);
+  padding: 10px;
+  white-space: nowrap;
+  letter-spacing: 0.12em;
+  animation: typing 2.5s steps(70, end), blink-caret 0.6s step-end infinite;
+  animation-iteration-count: infinite;
+}
+.background .lg .writeauto h3:active {
+  background-color: red;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: white;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+.background .lg .buttoncontrol button {
+  width: 30px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: absolute;
+  left: 720px;
+  top: 600px;
+}
+.background .lg .buttoncontrol button .i1 {
+  font-size: 7px;
+  color: white;
+  position: absolute;
+  right: 2px;
+  left: 3px;
+  top: 25px;
+  animation: mymove infinite;
+  animation-duration: 1.5s;
+  position: absolute;
+}
+.background .lg .buttoncontrol button:active {
+  background-color: red;
+}
+@keyframes mymove {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 25px;
+  }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.backgroundhover {
+  width: 100%;
+  height: 100vh;
+  background: url(img6.jpg) center/cover;
+}
+.backgroundhover .centerhover {
+  background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767));
+  width: 100%;
+  height: 100%;
+}
+.backgroundhover .centerhover .hover1 {
+  display: flex;
+}
+.backgroundhover .centerhover .hover1 .img2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(img2.jpg) center/cover;
+  width: 50%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run1;
+  animation-duration: 2s;
+  transition: 1.5s;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 12vh;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 button i {
+  font-size: 24px;
+  color: white;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 button:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 h2 {
+  font-size: 36px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 p {
+  font-size: 24px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  opacity: 50%;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 h2:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img2 .texthover2 p:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img2:hover {
+  animation-play-state: paused;
+  opacity: 50%;
+}
+@keyframes run1 {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.backgroundhover .centerhover .hover1 .img3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(img3.jpg) center/cover;
+  width: 50%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run2;
+  animation-duration: 2s;
+  transition: 1.5s;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 12vh;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 button i {
+  font-size: 24px;
+  color: white;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 button:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 h2 {
+  font-size: 36px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 p {
+  font-size: 24px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  opacity: 50%;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 h2:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img3 .texthover3 p:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover1 .img3:hover {
+  animation-play-state: paused;
+  opacity: 50%;
+}
+@keyframes run2 {
+  0% {
+    right: -15%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.backgroundhover .centerhover .hover2 {
+  display: flex;
+  margin-top: 50vh;
+}
+.backgroundhover .centerhover .hover2 .img4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(img4.jpg) center/cover;
+  width: 50%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run3;
+  animation-duration: 2s;
+  transition: 1.5s;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 12vh;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 button i {
+  font-size: 24px;
+  color: white;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 button:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 h2 {
+  font-size: 36px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 p {
+  font-size: 24px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  opacity: 50%;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 h2:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img4 .texthover4 p:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img4:hover {
+  animation-play-state: paused;
+  opacity: 50%;
+}
+@keyframes run3 {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.backgroundhover .centerhover .hover2 .img5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(img5.jpg) center/cover;
+  width: 50%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run4;
+  animation-duration: 2s;
+  transition: 1.5s;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 12vh;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 button i {
+  font-size: 24px;
+  color: white;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 button:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 h2 {
+  font-size: 36px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 p {
+  font-size: 24px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  opacity: 50%;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 h2:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img5 .texthover4 p:active {
+  background-color: red;
+}
+.backgroundhover .centerhover .hover2 .img5:hover {
+  animation-play-state: paused;
+  opacity: 50%;
+}
+@keyframes run4 {
+  0% {
+    right: -15%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.backgroundmaps {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+.backgroundmaps .map .googlemap .googlemap1 {
+  width: 760px;
+  height: 50vh;
+}
+.backgroundmaps .inputs {
+  background-color: rgb(8, 45, 100);
+  width: 760px;
+  height: 50vh;
+}
+.backgroundmaps .inputs .texth2 {
+  color: white;
+  opacity: 50%;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.backgroundmaps .inputs .inputs1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.backgroundmaps .inputs .inputs1 .inputs2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+.backgroundmaps .inputs .inputs1 .inputs2 .input1 {
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgb(12, 173, 63);
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundmaps .inputs .inputs1 .inputs3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+.backgroundmaps .inputs .inputs1 .inputs3 .input2 {
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgb(12, 173, 63);
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundmaps .inputs4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.backgroundmaps .inputs4 .inputs4 {
+  width: 570px;
+  height: 80px;
+  border: 1px solid rgb(12, 173, 63);
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  margin-left: 95px;
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+}
+.backgroundmaps .texth3 {
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  color: rgba(255, 255, 255, 0.851);
+}
+.backgroundmaps .texth4 {
+  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  color: rgba(255, 255, 255, 0.851);
+  margin-left: 95px;
+  margin-top: 40px;
+}/*# sourceMappingURL=style.css.map */
